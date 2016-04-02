@@ -170,9 +170,11 @@
 /*//////////////////////////////////////////MORE INFO*/
 #moreinfo h4 {
   text-align: left;
-  margin: 40px 0 0 20px;
+  margin: 30px 0 0 20px;
   padding: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.2; }
 #moreinfo ul {
   padding: 0;
   margin: 0;
@@ -202,6 +204,8 @@
   transition: all 0.3s; }
   #moreinfo li:hover {
     opacity: 0.8; }
+    #moreinfo li:hover:first-child {
+      opacity: 1; }
 #moreinfo li a {
   display: block;
   height: 100%;
@@ -234,7 +238,7 @@
 
 /*//////////////////////////////////////////ACTION*/
 #action {
-  background-image: url("../img/footer-cta.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)), url("../img/footer-cta.jpg");
   background-size: cover;
   background-color: #ccc;
   padding: 5% 0;
