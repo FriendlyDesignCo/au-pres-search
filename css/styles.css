@@ -42,6 +42,10 @@
   color: #fff;
   display: inline-block;
   padding: 20px; }
+  #nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+    text-decoration: none; }
 
 /*//////////////////////////////////////////WELCOME*/
 #welcome {
@@ -58,7 +62,9 @@
   padding: 20px;
   display: block; }
   .news__item h4 {
-    color: #005078; }
+    color: #005078;
+    margin-bottom: 0;
+    padding-bottom: 0; }
   .news__item:nth-of-type(4n+1) {
     background-color: rgba(0, 80, 120, 0.1); }
   .news__item:nth-of-type(4n+2) {
@@ -67,6 +73,19 @@
     background-color: rgba(0, 80, 120, 0.3); }
   .news__item:nth-of-type(4n+4) {
     background-color: rgba(0, 80, 120, 0.4); }
+  .news__item:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.3s all; }
+    .news__item:hover * {
+      opacity: 1; }
+
+.input {
+  margin-top: 50px; }
+  .input .btn {
+    max-width: 500px;
+    font-size: 12px;
+    margin-top: 15px; }
 
 /*//////////////////////////////////////////ABOUT*/
 #about h2 {
@@ -88,7 +107,11 @@
     height: 100%;
     font-family: Interstate;
     text-transform: uppercase;
-    background-size: cover !important; }
+    background-size: 100% !important;
+    background-position: center center !important;
+    transition: all 0.5s; }
+    .block a:hover {
+      background-size: 110% !important; }
   .block a div {
     position: absolute;
     top: 50%;
@@ -111,25 +134,25 @@
   .block.two-by-two {
     width: 100%; }
   .block .presidents-site {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/presidents-site.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), #005078), url("../img/presidents-site.jpg"); }
   .block .board-of-trustees {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/board-of-trustees.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/board-of-trustees.jpg"); }
   .block .strategic-plan {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/strategic-plan.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/strategic-plan.jpg"); }
   .block .mission {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/mission.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/mission.jpg"); }
   .block .annual-report {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/annual-report.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/annual-report.jpg"); }
   .block .budget {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/budget.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/budget.jpg"); }
   .block .mid-states-self-study {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/mid-states.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/mid-states.jpg"); }
   .block .governance {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/governance.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/governance.jpg"); }
   .block .academic-profile {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/academic-profile.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/academic-profile.jpg"); }
   .block .athletics {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../img/athletics.jpg"); }
+    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/athletics.jpg"); }
 
 .column-one, .column-two {
   float: left; }
@@ -184,19 +207,47 @@
   #timeline .container {
     background-color: #fff;
     padding: 50px; }
+  #timeline p, #timeline li {
+    font-size: 14px;
+    line-height: 1.4; }
+  #timeline ul {
+    margin-left: 20px;
+    padding-left: 0; }
+  #timeline .month {
+    margin-top: 40px; }
 
 /*//////////////////////////////////////////ACTION*/
 #action {
   background-image: url("../img/footer-cta.jpg");
   background-size: cover;
   background-color: #ccc;
-  padding: 25vh 0;
+  padding: 5% 0;
   text-align: center; }
-  #action .col-md-6 {
-    background-color: rgba(0, 80, 120, 0.95); }
-    #action .col-md-6 h3 {
-      text-transform: uppercase; }
-    #action .col-md-6 p, #action .col-md-6 h3, #action .col-md-6 a {
+  #action .row > * h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 0; }
+  #action .row > * p, #action .row > * h3, #action .row > * a {
+    color: #fff; }
+  #action .row > * .btn {
+    max-width: 400px; }
+    #action .row > * .btn:hover {
+      color: #005078; }
+  #action .row > * div {
+    background-color: rgba(0, 80, 120, 0.95);
+    padding: 40px;
+    max-height: 100%; }
+  #action .row > *:first-child div {
+    margin-right: 10px; }
+  #action .row > *:last-child div {
+    margin-left: 10px; }
+  #action .contact {
+    margin-top: 75px; }
+    #action .contact a {
+      text-decoration: underline; }
+      #action .contact a:hover {
+        text-decoration: none; }
+    #action .contact p, #action .contact a {
       color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

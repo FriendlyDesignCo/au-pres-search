@@ -42,6 +42,11 @@
 	color: #fff;
 	display: inline-block;
 	padding: 20px;
+	&:hover{
+		background-color: rgba(255,255,255,0.2);
+		transition: all 0.3s;
+		text-decoration: none;
+	}
 }
 /*//////////////////////////////////////////WELCOME*/
 #welcome{
@@ -59,7 +64,9 @@
 	padding: 20px;
 	display: block;
 	h4{
-		color:  rgba(0,80,120,1);	
+		color:  rgba(0,80,120,1);
+		margin-bottom: 0;
+		padding-bottom: 0;	
 	}
 	&:nth-of-type(4n+1){
 		background-color:  rgba(0,80,120,0.1);
@@ -73,8 +80,23 @@
 	&:nth-of-type(4n+4){
 		background-color:  rgba(0,80,120,0.4);
 	}
+	&:hover{
+		text-decoration: none;
+		opacity: 0.7;
+		transition: 0.3s all;
+		*{
+			opacity: 1;
+		}
+	}
 }
-
+.input{
+	margin-top: 50px;
+	.btn{
+		max-width:500px;
+		font-size: 12px;
+		margin-top: 15px;
+	}
+}
 
 /*//////////////////////////////////////////ABOUT*/
 #about{
@@ -90,7 +112,7 @@
 	float: left;
 	background-color: #999;
 	/*border: 1px solid #f9c;*/
-	 a{
+	a{
 		color: #fff;
 		position: absolute;
 		text-align: center;
@@ -100,7 +122,12 @@
 		height: 100%;
 		font-family: Interstate;
 		text-transform: uppercase;
-		background-size: cover !important;
+		background-size:100% !important;
+		background-position: center center !important;
+		transition: all 0.5s;
+		&:hover{
+			background-size:110% !important;
+		}
 	}
 	a div{
 		position: absolute;
@@ -109,14 +136,14 @@
 		transform: translate(-50%, -50%);
 	}
 	&:after{
-	content: "";
-	display: block;
-	padding-bottom: 100%;	
+		content: "";
+		display: block;
+		padding-bottom: 100%;	
 	}
 	&.two-by-one:after{
-	content: "";
-	display: block;
-	padding-bottom: 50%;
+		content: "";
+		display: block;
+		padding-bottom: 50%;
 	}
 	&.one-by-one{
 		width:50%;
@@ -131,35 +158,40 @@
 		width:100%;
 	}
 	.presidents-site{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/presidents-site.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 1)), url('../img/presidents-site.jpg');
+		// transition: all 0.3s;
+		&:hover{
+			// background-size:120% !important;
+			// transition: all 0.3s;
+		}
 
 	}
 	.board-of-trustees{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/board-of-trustees.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/board-of-trustees.jpg');
 	}
 	.strategic-plan{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/strategic-plan.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/strategic-plan.jpg');
 	}
 	.mission{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/mission.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/mission.jpg');
 	}
 	.annual-report{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/annual-report.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/annual-report.jpg');
 	}
 	.budget{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/budget.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/budget.jpg');
 	}
 	.mid-states-self-study{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/mid-states.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/mid-states.jpg');
 	}
 	.governance{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/governance.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/governance.jpg');
 	}
 	.academic-profile{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/academic-profile.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/academic-profile.jpg');
 	}
 	.athletics{
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/athletics.jpg');
+		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/athletics.jpg');
 	}
 
 }
@@ -228,21 +260,65 @@
 		background-color: #fff;
 		padding: 50px;
 	}
+	p, li{
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	ul{
+		margin-left: 20px;
+		padding-left: 0;
+	}
+	.month{
+		margin-top: 40px;
+	}
 }
 /*//////////////////////////////////////////ACTION*/
 #action{
 	background-image: url('../img/footer-cta.jpg');
 	background-size: cover;
 	background-color: #ccc;
-	padding: 25vh 0;
+	padding: 5% 0;
 	text-align: center;
-	.col-md-6{
-		background-color:  rgba(0,80,120,0.95);
+	.row > *{
 		h3{
 			text-transform: uppercase;
+			margin-top: 0;
+			padding-top: 0;
 		}
+
 		p, h3, a{
-		color: #fff;
+			color: #fff;
+		}
+		.btn{
+			max-width: 400px;
+			&:hover{
+				color: rgb(0,80,120);
+			}
+		}
+		div{
+			background-color:  rgba(0,80,120,0.95);
+			padding: 40px;
+			max-height: 100%;
+		}
+		&:first-child div{
+			margin-right: 10px;
+			
+		}
+		&:last-child div{
+			margin-left: 10px;
 		}
 	}
+	.contact {
+		margin-top: 75px;
+		a{
+			text-decoration: underline;
+			&:hover{
+				text-decoration:none; 
+			}
+		}
+		p, a{
+		color: #fff;
+	}
+}
+
 }
