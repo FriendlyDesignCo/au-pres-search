@@ -2,6 +2,8 @@
 #hero {
   position: relative;
   height: 75vh;
+  background-image: url("../img/search-hero.jpg");
+  background-size: cover;
   /*background-color: #333;*/ }
 
 #hero h1 {
@@ -60,20 +62,61 @@
 #about h2 {
   text-align: center; }
 
-.block a {
-  color: #fff;
-  position: absolute;
-  text-align: center;
-  /*border: 1px solid #000;*/
-  /*padding-top: 50%;*/
-  width: 100%;
-  height: 100%; }
-
-.block a div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+.block {
+  position: relative;
+  width: 50%;
+  float: left;
+  background-color: #999;
+  /*border: 1px solid #f9c;*/ }
+  .block a {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    /*padding-top: 50%;*/
+    width: 100%;
+    height: 100%; }
+  .block a div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .block:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
+  .block.two-by-one:after {
+    content: "";
+    display: block;
+    padding-bottom: 50%; }
+  .block.one-by-one {
+    width: 50%; }
+  .block.two-by-one {
+    width: 100%; }
+  .block.two-by-one a {
+    padding-top: 25%; }
+  .block.two-by-two {
+    width: 100%; }
+  .block .presidents-site {
+    background-image: url("../img/presidents-site.jpg"); }
+  .block .board-of-trustees {
+    background-image: url("../img/board-of-trustees.jpg"); }
+  .block .strategic-plan {
+    background-image: url("../img/strategic-plan.jpg"); }
+  .block .mission {
+    background-image: url("../img/mission.jpg"); }
+  .block .annual-report {
+    background-image: url("../img/annual-report.jpg"); }
+  .block .budget {
+    background-image: url("../img/budget.jpg"); }
+  .block .mid-states-self-study {
+    background-image: url("../img/mid-states-self-study.jpg"); }
+  .block .governance {
+    background-image: url("../img/governance.jpg"); }
+  .block .academic-profile {
+    background-image: url("../img/academic-profile.jpg"); }
+  .block .athletics {
+    background-image: url("../img/athletics.jpg"); }
 
 .column-one, .column-two {
   float: left; }
@@ -84,36 +127,7 @@
 .column-two {
   width: 28.571428572%; }
 
-.block {
-  position: relative;
-  width: 50%;
-  float: left;
-  background-color: #999;
-  /*border: 1px solid #f9c;*/ }
-
-.block:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%; }
-
-.block.two-by-one:after {
-  content: "";
-  display: block;
-  padding-bottom: 50%; }
-
-.block.one-by-one {
-  width: 50%; }
-
 .column-one .one-by-one {
-  width: 100%; }
-
-.block.two-by-one {
-  width: 100%; }
-
-.block.two-by-one a {
-  padding-top: 25%; }
-
-.block.two-by-two {
   width: 100%; }
 
 /*//////////////////////////////////////////MORE INFO*/
