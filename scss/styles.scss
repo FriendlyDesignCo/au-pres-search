@@ -8,7 +8,7 @@
 }
 #hero:after{
 	content: " ";
-	background-color: rgba(0,80,120,0.75);
+	background-color: rgba(0,0,0,0.5);
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -100,6 +100,7 @@
 		height: 100%;
 		font-family: Interstate;
 		text-transform: uppercase;
+		background-size: cover !important;
 	}
 	a div{
 		position: absolute;
@@ -131,6 +132,7 @@
 	}
 	.presidents-site{
 		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/presidents-site.jpg');
+
 	}
 	.board-of-trustees{
 		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/board-of-trustees.jpg');
