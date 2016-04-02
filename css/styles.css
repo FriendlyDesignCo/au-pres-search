@@ -23,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 90px;
+  font-size: 70px;
   text-transform: uppercase;
   line-height: 1; }
 
@@ -89,7 +89,8 @@
 
 /*//////////////////////////////////////////ABOUT*/
 #about h2 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 .block {
   position: relative;
@@ -169,13 +170,23 @@
 /*//////////////////////////////////////////MORE INFO*/
 #moreinfo h4 {
   text-align: left;
-  margin: 0;
+  margin: 20px 0 0 20px;
   padding: 0; }
 #moreinfo ul {
   padding: 0;
   margin: 0;
   width: 100%;
   display: table; }
+#moreinfo li:nth-of-type(5n+1) {
+  background-color: rgba(208, 196, 182, 0.6); }
+#moreinfo li:nth-of-type(5n+2) {
+  background-color: rgba(208, 196, 182, 0.7); }
+#moreinfo li:nth-of-type(5n+3) {
+  background-color: rgba(208, 196, 182, 0.8); }
+#moreinfo li:nth-of-type(5n+4) {
+  background-color: rgba(208, 196, 182, 0.9); }
+#moreinfo li:nth-of-type(5n+5) {
+  background-color: #d0c4b6; }
 #moreinfo li {
   display: inline-block;
   float: left;
@@ -185,12 +196,16 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 12px;
-  line-height: 1; }
+  font-size: 14px;
+  line-height: 1.2;
+  transition: all 0.3s; }
+  #moreinfo li:hover {
+    opacity: 0.8; }
 #moreinfo li a {
   display: block;
   height: 100%;
-  position: relative; }
+  position: relative;
+  text-transform: uppercase; }
 #moreinfo li a div {
   position: absolute;
   top: 50%;

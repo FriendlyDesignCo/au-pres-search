@@ -23,7 +23,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 90px;
+	font-size: 70px;
 	text-transform: uppercase;
 	line-height: 1;
 }
@@ -104,6 +104,7 @@
 }
 #about h2{
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .block{
@@ -213,7 +214,7 @@
 #moreinfo{
 	h4{
 		text-align: left;
-		margin: 0;
+		margin: 20px 0 0 20px;
 		padding: 0;
 	}
 	ul{
@@ -221,9 +222,24 @@
 		margin: 0;
 		width: 100%;
 		display: table;
+		// background-color: red;
+	}
+	li:nth-of-type(5n+1){
+		background-color: rgba(208,196,182,0.6);
+	}
+	li:nth-of-type(5n+2){
+		background-color: rgba(208,196,182,0.7);
+	}
+	li:nth-of-type(5n+3){
+		background-color: rgba(208,196,182,0.8);
+	}
+	li:nth-of-type(5n+4){
+		background-color: rgba(208,196,182,0.9);
+	}
+	li:nth-of-type(5n+5){
+		background-color: rgba(208,196,182,1);
 	}
 	li{
-		
 		display: inline-block;
 		float: left;
 		width: 12.49%;
@@ -232,13 +248,18 @@
 		padding: 0;
 		margin: 0;
 		text-align: center;
-		font-size: 12px;
-		line-height: 1;
+		font-size: 14px;
+		line-height: 1.2;
+		transition: all 0.3s;
+		&:hover{
+			opacity: 0.8;
+		}
 	}
 	li a{
 		display: block;
 		height: 100%;
 		position: relative;
+		text-transform: uppercase;
 	}
 	li a div{
 		position: absolute;
