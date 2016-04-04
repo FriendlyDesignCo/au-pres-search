@@ -88,7 +88,7 @@
     background-color: rgba(0, 80, 120, 0.4); }
   .news__item:hover {
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.3s all; }
     .news__item:hover * {
       opacity: 1; }
@@ -149,25 +149,25 @@
   .block.two-by-two {
     width: 100%; }
   .block .presidents-site {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), #005078), url("../img/presidents-site.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/presidents-site.jpg"); }
   .block .board-of-trustees {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/board-of-trustees.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/board-of-trustees.jpg"); }
   .block .strategic-plan {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/strategic-plan.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/strategic-plan.jpg"); }
   .block .mission {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/mission.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/mission.jpg"); }
   .block .annual-report {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/annual-report.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/annual-report.jpg"); }
   .block .budget {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/budget.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/budget.jpg"); }
   .block .mid-states-self-study {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/mid-states.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/mid-states.jpg"); }
   .block .governance {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/governance.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/governance.jpg"); }
   .block .academic-profile {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/academic-profile.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/academic-profile.jpg"); }
   .block .athletics {
-    background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url("../img/athletics.jpg"); }
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/athletics.jpg"); }
 
 .column-one, .column-two {
   float: left; }
@@ -246,7 +246,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  font-weight: 700 !important; }
 
 /*//////////////////////////////////////////TIMELINE*/
 #timeline {

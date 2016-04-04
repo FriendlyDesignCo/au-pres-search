@@ -100,7 +100,7 @@ $screen-sm: 300px;
 	}
 	&:hover{
 		text-decoration: none;
-		opacity: 0.7;
+		opacity: 0.5;
 		transition: 0.3s all;
 		*{
 			opacity: 1;
@@ -178,7 +178,7 @@ $screen-sm: 300px;
 		width:100%;
 	}
 	.presidents-site{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 1)), url('../img/presidents-site.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/presidents-site.jpg');
 		// transition: all 0.3s;
 		&:hover{
 			// background-size:120% !important;
@@ -187,31 +187,31 @@ $screen-sm: 300px;
 
 	}
 	.board-of-trustees{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/board-of-trustees.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/board-of-trustees.jpg');
 	}
 	.strategic-plan{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/strategic-plan.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/strategic-plan.jpg');
 	}
 	.mission{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/mission.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/mission.jpg');
 	}
 	.annual-report{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/annual-report.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/annual-report.jpg');
 	}
 	.budget{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/budget.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/budget.jpg');
 	}
 	.mid-states-self-study{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/mid-states.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/mid-states.jpg');
 	}
 	.governance{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/governance.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/governance.jpg');
 	}
 	.academic-profile{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/academic-profile.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/academic-profile.jpg');
 	}
 	.athletics{
-		background: linear-gradient(rgba(0, 80, 120, 0.3), rgba(0, 80, 120, 0.8)), url('../img/athletics.jpg');
+		background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,0.5)), url('../img/athletics.jpg');
 	}
 
 }
@@ -312,6 +312,7 @@ $screen-sm: 300px;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		font-weight: 700 !important;
 	}
 }
 
