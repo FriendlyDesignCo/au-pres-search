@@ -1,3 +1,7 @@
+$screen-lg: 992px;
+$screen-md: 500px;
+$screen-sm: 300px;
+
 /*//////////////////////////////////////////HERO*/
 #hero{
 	position: relative;
@@ -5,6 +9,9 @@
 	background-image: url('../img/search-hero.jpg');
 	background-size: cover;
 	/*background-color: #333;*/
+	@media screen and (max-width: $screen-lg) {
+		height: 50vh;
+	}
 }
 #hero:after{
 	content: " ";
@@ -26,6 +33,9 @@
 	font-size: 70px;
 	text-transform: uppercase;
 	line-height: 1;
+	@media screen and (max-width: $screen-lg) {
+		font-size: 40px;
+	}
 }
 /*//////////////////////////////////////////NAVIGATION*/
 #nav ul{
@@ -51,6 +61,14 @@
 /*//////////////////////////////////////////WELCOME*/
 #welcome{
 	padding:100px 0;
+	@media screen and (max-width: $screen-lg) {
+		padding: 25px;
+	}
+}
+.news{
+	@media screen and (max-width: $screen-lg) {
+		margin-top: 25px;
+	}
 }
 .news__heading{
 	background-color:  rgba(0,80,120,0.4);
@@ -91,6 +109,7 @@
 }
 .input{
 	margin-top: 50px;
+	padding: 20px;
 	.btn{
 		max-width:500px;
 		font-size: 12px;
@@ -201,9 +220,23 @@
 }
 .column-one{
 	width: 14.285714286%;
+	@media screen and (max-width: $screen-lg) {
+		// float: none;
+		width: 33.3333%;
+	}
+}
+.first-column{
+	@media screen and (max-width: $screen-lg) {
+		float: left !important;
+		width: 66.6666% !important;
+	}
 }
 .column-two{
 	width: 28.571428572%;
+	@media screen and (max-width: $screen-lg) {
+		float: none;
+		width: 100%;
+	}
 }
 .column-one .one-by-one{
 	width: 100%;
@@ -219,6 +252,9 @@
 		font-size: 16px;
 		text-transform: uppercase;
 		line-height: 1.2;
+		@media screen and (max-width: $screen-lg) {
+			text-align: center;
+		}
 	}
 	ul{
 		padding: 0;
@@ -227,6 +263,7 @@
 		display: table;
 		// background-color: red;
 	}
+
 	li:nth-of-type(5n+1){
 		background-color: rgba(208,196,182,0.6);
 	}
@@ -247,13 +284,15 @@
 		float: left;
 		width: 12.49%;
 		height: 100px;
-		/*background-color: #333;*/
 		padding: 0;
 		margin: 0;
 		text-align: center;
 		font-size: 14px;
 		line-height: 1.2;
 		transition: all 0.3s;
+		@media screen and (max-width: $screen-lg) {
+			width: 50%;
+		}
 		&:hover{
 			opacity: 0.8;
 		&:first-child{
@@ -279,6 +318,9 @@
 /*//////////////////////////////////////////TIMELINE*/
 #timeline{
 	padding:50px;
+	@media screen and (max-width: $screen-lg) {
+		padding: 0;
+	}
 	h2{
 		text-align: center;
 		margin-top: 0;
@@ -307,7 +349,10 @@
 	background-color: #ccc;
 	padding: 5% 0;
 	text-align: center;
-	.row > *{
+	.row .col-md-6{
+		@media screen and (max-width: $screen-lg) {
+			width: 100%;
+		}
 		h3{
 			text-transform: uppercase;
 			margin-top: 0;
@@ -327,17 +372,31 @@
 			background-color:  rgba(0,80,120,0.95);
 			padding: 40px;
 			max-height: 100%;
+			@media screen and (max-width: $screen-lg) {
+				width: 100%;
+				max-height: inherit;
+
+			}
 		}
 		&:first-child div{
-			margin-right: 10px;
+			margin-right: 20px;
+			@media screen and (max-width: $screen-lg) {
+				margin: 40px 0;
+			}
 			
 		}
 		&:last-child div{
-			margin-left: 10px;
+			margin-left: 20px;
+			@media screen and (max-width: $screen-lg) {
+				margin: 40px 0;
+			}
 		}
 	}
 	.contact {
 		margin-top: 75px;
+		@media screen and (max-width: $screen-lg) {
+			margin-top: 25px;
+		}
 		a{
 			text-decoration: underline;
 			&:hover{

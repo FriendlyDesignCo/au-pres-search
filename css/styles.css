@@ -5,6 +5,9 @@
   background-image: url("../img/search-hero.jpg");
   background-size: cover;
   /*background-color: #333;*/ }
+  @media screen and (max-width: 992px) {
+    #hero {
+      height: 50vh; } }
 
 #hero:after {
   content: " ";
@@ -26,6 +29,9 @@
   font-size: 70px;
   text-transform: uppercase;
   line-height: 1; }
+  @media screen and (max-width: 992px) {
+    #hero h1 {
+      font-size: 40px; } }
 
 /*//////////////////////////////////////////NAVIGATION*/
 #nav ul {
@@ -50,6 +56,13 @@
 /*//////////////////////////////////////////WELCOME*/
 #welcome {
   padding: 100px 0; }
+  @media screen and (max-width: 992px) {
+    #welcome {
+      padding: 25px; } }
+
+@media screen and (max-width: 992px) {
+  .news {
+    margin-top: 25px; } }
 
 .news__heading {
   background-color: rgba(0, 80, 120, 0.4);
@@ -81,7 +94,8 @@
       opacity: 1; }
 
 .input {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 20px; }
   .input .btn {
     max-width: 500px;
     font-size: 12px;
@@ -160,9 +174,21 @@
 
 .column-one {
   width: 14.285714286%; }
+  @media screen and (max-width: 992px) {
+    .column-one {
+      width: 33.3333%; } }
+
+@media screen and (max-width: 992px) {
+  .first-column {
+    float: left !important;
+    width: 66.6666% !important; } }
 
 .column-two {
   width: 28.571428572%; }
+  @media screen and (max-width: 992px) {
+    .column-two {
+      float: none;
+      width: 100%; } }
 
 .column-one .one-by-one {
   width: 100%; }
@@ -175,6 +201,9 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 1.2; }
+  @media screen and (max-width: 992px) {
+    #moreinfo h4 {
+      text-align: center; } }
 #moreinfo ul {
   padding: 0;
   margin: 0;
@@ -195,13 +224,15 @@
   float: left;
   width: 12.49%;
   height: 100px;
-  /*background-color: #333;*/
   padding: 0;
   margin: 0;
   text-align: center;
   font-size: 14px;
   line-height: 1.2;
   transition: all 0.3s; }
+  @media screen and (max-width: 992px) {
+    #moreinfo li {
+      width: 50%; } }
   #moreinfo li:hover {
     opacity: 0.8; }
     #moreinfo li:hover:first-child {
@@ -220,6 +251,9 @@
 /*//////////////////////////////////////////TIMELINE*/
 #timeline {
   padding: 50px; }
+  @media screen and (max-width: 992px) {
+    #timeline {
+      padding: 0; } }
   #timeline h2 {
     text-align: center;
     margin-top: 0;
@@ -243,26 +277,42 @@
   background-color: #ccc;
   padding: 5% 0;
   text-align: center; }
-  #action .row > * h3 {
+  @media screen and (max-width: 992px) {
+    #action .row .col-md-6 {
+      width: 100%; } }
+  #action .row .col-md-6 h3 {
     text-transform: uppercase;
     margin-top: 0;
     padding-top: 0; }
-  #action .row > * p, #action .row > * h3, #action .row > * a {
+  #action .row .col-md-6 p, #action .row .col-md-6 h3, #action .row .col-md-6 a {
     color: #fff; }
-  #action .row > * .btn {
+  #action .row .col-md-6 .btn {
     max-width: 400px; }
-    #action .row > * .btn:hover {
+    #action .row .col-md-6 .btn:hover {
       color: #005078; }
-  #action .row > * div {
+  #action .row .col-md-6 div {
     background-color: rgba(0, 80, 120, 0.95);
     padding: 40px;
     max-height: 100%; }
-  #action .row > *:first-child div {
-    margin-right: 10px; }
-  #action .row > *:last-child div {
-    margin-left: 10px; }
+    @media screen and (max-width: 992px) {
+      #action .row .col-md-6 div {
+        width: 100%;
+        max-height: inherit; } }
+  #action .row .col-md-6:first-child div {
+    margin-right: 20px; }
+    @media screen and (max-width: 992px) {
+      #action .row .col-md-6:first-child div {
+        margin: 40px 0; } }
+  #action .row .col-md-6:last-child div {
+    margin-left: 20px; }
+    @media screen and (max-width: 992px) {
+      #action .row .col-md-6:last-child div {
+        margin: 40px 0; } }
   #action .contact {
     margin-top: 75px; }
+    @media screen and (max-width: 992px) {
+      #action .contact {
+        margin-top: 25px; } }
     #action .contact a {
       text-decoration: underline; }
       #action .contact a:hover {
