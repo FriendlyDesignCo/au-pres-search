@@ -490,8 +490,22 @@ form{
 
 /*//////////////////////////////////////////INTERIOR PAGES*/
 .page-interior{
+	.committee #hero{
+		// background-image: 
+	}
+	.search #hero{
+		// background-image: 
+	}
+	.outreach #hero{
+		// background-image: 
+	}
+
 	#hero{
 		height: 25vh;
+		background-color: none;
+		&:after{
+			background-color: rgba(0,0,0,0);
+		}
 	}
 	h2{
 		text-align: center;
@@ -507,7 +521,7 @@ form{
 		font-size: 1.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
-		&:hover{
+		&:hover, &:focus, &:active{
 			opacity: 0.8;
 			text-decoration: none;
 

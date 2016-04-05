@@ -385,7 +385,10 @@ form {
 
 /*//////////////////////////////////////////INTERIOR PAGES*/
 .page-interior #hero {
-  height: 25vh; }
+  height: 25vh;
+  background-color: none; }
+  .page-interior #hero:after {
+    background-color: transparent; }
 .page-interior h2 {
   text-align: center; }
 .page-interior .photo {
@@ -395,7 +398,7 @@ form {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px; }
-  .page-interior h1 a:hover {
+  .page-interior h1 a:hover, .page-interior h1 a:focus, .page-interior h1 a:active {
     opacity: 0.8;
     text-decoration: none; }
 .page-interior h1 {
