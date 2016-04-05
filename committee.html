@@ -266,6 +266,7 @@
 					</div>	
 					<div class="modal-footer text-center">
 						<input class="btn btn-primary" type="submit" value="Submit">
+						<div id="form-messages"></div>
 					</div>
 				</form>
 			</div>
@@ -374,6 +375,7 @@
 					</div>
 					<div class="modal-footer text-center">
 						<input class="btn btn-primary" type="submit" value="Submit">
+						<div id="form-messages"></div>
 					</div>
 				</form>
 			</div>
@@ -462,22 +464,24 @@
 			    // Set the message text.
 			    //$(formMessages).text(response);
 
-			    $(".modal").modal("hide");
+			    //$(".modal").modal("hide");
 
+			    $(this).find('#form-messages').text("Thanks for your submission!");
+				
 			    // Clear the form.
 			    //$('#name').val('');
 			    //$('#email').val('');
 			    //$('#message').val('');
 			}).fail(function(data) {
 			    // Make sure that the formMessages div has the 'error' class.
-			    $(formMessages).removeClass('success');
-			    $(formMessages).addClass('error');
+			    //$(formMessages).removeClass('success');
+			    //$(formMessages).addClass('error');
 
 			    // Set the message text.
 			    if (data.responseText !== '') {
-			        $(formMessages).text(data.responseText);
+			        $(this).find('#form-messages').text(data.responseText);
 			    } else {
-			        $(formMessages).text('Oops! An error occured and your message could not be sent.');
+			        $(this).find('#form-messages').text('Oops! An error occured and your message could not be sent.');
 			    }
 			});
 		});
@@ -485,7 +489,7 @@
 		/*$( "form" ).on( "submit", function( event ) {
 		  event.preventDefault();
 		  console.log( $( this ).serialize() );
-		 $(".modal").modal("hide");
+		 $(this).find('#form-messages').text("Thanks for your submission!");
 		});*/
 	});
 
