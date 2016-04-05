@@ -603,116 +603,6 @@
 </section>
 
 
-<!-- Nominate Modal -->
-<div class="modal fade" id="nominateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Nominate a Student or Faculty Member</h4>
-			</div>
-			<div class="modal-body">
-				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Monday, April 11.</strong></p>
-				<form class="">
-					<div class="row">
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
-						</div>
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Email:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-						</div>
-					</div>
-
-
-
-
-
-
-					
-					<div class="form-group">
-						<label>Affiliation</label>
-						<div class="radio">
-							<label>
-								<input type="radio" name="affiliation" id="optionsRadios1" value="option1" checked>
-								Student (Undergraduate, Graduate/PhD/Law)
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="affiliation" id="optionsRadios2" value="option2">
-								Faculty
-							</label>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label>School</label>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios1" value="option1" checked>
-								CAS
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
-								KSB
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
-								SOC
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
-								SIS
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
-								SPA
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
-								SPExS
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Qualifications:</label>
-						<textarea class="form-control" rows="3" placeholder="What's up?" required></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">What would the nominee bring to the committee:</label>
-						<textarea class="form-control" rows="3" placeholder="What's up?" required></textarea>
-					</div>
-					<div class="row">	
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominator's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
-						</div>
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominator's Email:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-primary">Submit</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- End Modal -->
 <!-- Submit Modal -->
 <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -723,72 +613,182 @@
 			</div>
 			<div class="modal-body">
 				<p>Thank you for your comments and suggestions regarding the AU Presidential Search.</p>
+				<form class="commitee-form" action="" method="post">
 
-				<form>
 					<div class="row">
 						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+							<label for="nominee-name">Nominee's Name:</label>
+							<input type="text" class="form-control" id="nominee-name" name="fullname" placeholder="Full Name">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Email:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							<label for="nominee-email">Nominee's Email:</label>
+							<input type="email" class="form-control" id="nominee-email" name="email" placeholder="Email">
 						</div>
 					</div>
 					<div class="form-group">
 						<label>Affiliation (select all applicable fields):</label>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Undergraduate Student
+								<input type="checkbox" name="affiliation" value="Undergraduate Student"> Undergraduate Student
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Graduate Student
+								<input type="checkbox" name="affiliation" value="Graduate Student"> Graduate Student
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Faculty
+								<input type="checkbox" name="affiliation"  value="Faculty"> Faculty
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Staff
+								<input type="checkbox" name="affiliation"  value="Staff"> Staff
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Alumni
+								<input type="checkbox" name="affiliation"  value="Alumni"> Alumni
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Neighbor
+								<input type="checkbox" name="affiliation"  value="Neighbor"> Neighbor
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Friend
+								<input type="checkbox" name="affiliation"  value="Friend"> Friend
 							</label>
 						</div>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"> Other
+								<input type="checkbox" name="affiliation"  value="Other"> Other
 							</label>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Comments:</label>
-						<textarea class="form-control" rows="3" placeholder="What's up?" required></textarea>
+						<label for="comment-box">Comments:</label>
+						<textarea id="comment-box" class="form-control" rows="3" placeholder="What's up?" required></textarea>
 					</div>	
+					<div class="modal-footer text-center">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
 				</form>
-			</div>
-			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-primary">Submit</button>
 			</div>
 		</div>
 	</div>
+</div>
+<!-- End Modal -->
+
+<!-- Nominate Modal -->
+<div class="modal fade" id="nominateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Nominate a Student or Faculty Member</h4>
+			</div>
+			<div class="modal-body">
+
+				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Monday, April 11.</strong></p>
+				
+
+				<div id="form-messages"></div>
+				<form id="ajax-submit-form" class="modal-form " action="" method="post">
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="nominee-name-2">Nominee's Name:</label>
+							<input type="text" class="form-control" name="fullname" id="nominee-name-2" placeholder="Full Name">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="nominee-email-2">Nominee's Email:</label>
+							<input type="email" class="form-control" name="email" id="nominee-email-2" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Affiliation</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios1" value="Student" checked>
+								Student (Undergraduate, Graduate/PhD/Law)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios2" value="Faculty">
+								Faculty
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>School</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios1" value="CAS" checked>
+								CAS
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios2" value="KSB">
+								KSB
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios2" value="SOC">
+								SOC
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios2" value="SIS">
+								SIS
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios2" value="SPA">
+								SPA
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios2" value="SPExS">
+								SPExS
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="qualifications">Qualifications:</label>
+						<textarea class="form-control" id="qualifications" rows="3" name="qualifications" placeholder="What's up?" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="nominee-details">What would the nominee bring to the committee:</label>
+						<textarea class="form-control" id="nominee-details" rows="3" name="nominee-details" placeholder="What's up?" required></textarea>
+					</div>
+					<div class="row">	
+						<div class="form-group col-md-6">
+							<label for="nominator-name">Nominator's Name:</label>
+							<input type="text" class="form-control" name="nominator-name" id="nominator-name" placeholder="Full Name">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="nominator-email">Nominator's Email:</label>
+							<input type="email" class="form-control" name="nominator-email" id="nominator-email" placeholder="Email">
+						</div>
+					</div>
+					<div class="modal-footer text-center">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
 </div>
 <!-- End Modal -->
 </div>
