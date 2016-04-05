@@ -140,9 +140,13 @@
     background-size: 100% !important;
     background-position: center center !important;
     transition: all 0.25s;
-    box-shadow: inset 0px 0px 0px 1px #fff; }
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    text-shadow: 0px 0px 7px #000; }
     .block a:hover {
       background-size: 110% !important; }
+    @media screen and (max-width: 992px) {
+      .block a {
+        font-size: 18px; } }
   .block a div {
     position: absolute;
     top: 50%;
@@ -273,8 +277,7 @@
 #moreinfo li a {
   display: block;
   height: 100%;
-  position: relative;
-  text-transform: uppercase; }
+  position: relative; }
 #moreinfo li a div {
   position: absolute;
   top: 50%;
