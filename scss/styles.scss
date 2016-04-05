@@ -2,6 +2,11 @@ $screen-lg: 992px;
 $screen-md: 500px;
 $screen-sm: 300px;
 
+
+strong{
+	font-family: Interstate, Arial, sans-serif;
+}
+
 /*//////////////////////////////////////////HERO*/
 #hero{
 	position: relative;
@@ -411,10 +416,10 @@ $screen-sm: 300px;
 		}
 		.btn{
 			position: absolute;
-			top: 60%;
+			top: 70%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			bottom: 100px;
+			// bottom: 100px;
 			max-width: 400px;
 			@media screen and (max-width: $screen-lg) {
 				position: relative;
@@ -474,15 +479,75 @@ $screen-sm: 300px;
 }
 
 
-
-
-
-
-
-
-
-
+/*//////////////////////////////////////////MODAL WINDOWS*/
 
 form{
 	font-family: Interstate,Arial,sans-serif;
 }
+
+
+
+
+/*//////////////////////////////////////////INTERIOR PAGES*/
+.page-interior{
+	.committee #hero{
+		// background-image: 
+	}
+	.search #hero{
+		// background-image: 
+	}
+	.outreach #hero{
+		// background-image: 
+	}
+
+	#hero{
+		height: 25vh;
+		background-color: none;
+		&:after{
+			background-color: rgba(0,0,0,0);
+		}
+	}
+	h2{
+		text-align: center;
+	}
+	.photo{
+		margin: 0 0 30px 30px;
+	}
+	h1 a{
+		// position: absolute;
+		// top: 50%;
+		// transform: translate(0, -50%);
+		color: #fff !important;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		&:hover, &:focus, &:active{
+			opacity: 0.8;
+			text-decoration: none;
+
+		}
+	}
+	h1{
+		position: relative;
+		line-height: 1;
+		float: left;
+		margin: 0;
+		padding: 23px 0;
+		// height: 100%;
+		@media screen and (max-width: $screen-lg) {
+			text-align: center;
+			float: none;
+		}
+	}
+}
+.committee{
+	ul, li{
+		padding-left: 0;
+		margin-left: 0;
+		list-style: none;
+	}
+	li{
+		padding-bottom: 10px;
+	}
+}
+

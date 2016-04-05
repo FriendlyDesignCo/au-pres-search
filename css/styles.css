@@ -1,3 +1,6 @@
+strong {
+  font-family: Interstate, Arial, sans-serif; }
+
 /*//////////////////////////////////////////HERO*/
 #hero {
   position: relative;
@@ -329,10 +332,9 @@
     color: #fff; }
   #action .row .col-md-6 .btn {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 100px;
     max-width: 400px; }
     @media screen and (max-width: 992px) {
       #action .row .col-md-6 .btn {
@@ -377,7 +379,44 @@
     #action .contact p, #action .contact a {
       color: #fff; }
 
+/*//////////////////////////////////////////MODAL WINDOWS*/
 form {
   font-family: Interstate,Arial,sans-serif; }
+
+/*//////////////////////////////////////////INTERIOR PAGES*/
+.page-interior #hero {
+  height: 25vh;
+  background-color: none; }
+  .page-interior #hero:after {
+    background-color: transparent; }
+.page-interior h2 {
+  text-align: center; }
+.page-interior .photo {
+  margin: 0 0 30px 30px; }
+.page-interior h1 a {
+  color: #fff !important;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
+  .page-interior h1 a:hover, .page-interior h1 a:focus, .page-interior h1 a:active {
+    opacity: 0.8;
+    text-decoration: none; }
+.page-interior h1 {
+  position: relative;
+  line-height: 1;
+  float: left;
+  margin: 0;
+  padding: 23px 0; }
+  @media screen and (max-width: 992px) {
+    .page-interior h1 {
+      text-align: center;
+      float: none; } }
+
+.committee ul, .committee li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none; }
+.committee li {
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
