@@ -760,7 +760,8 @@ var jsShowRejectForApprover = 1;
 			</div>
 			<div class="modal-body">
 				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Friday, April 8.</strong></p>
-				<form class="" action="" method="post">
+				<div id="form-messages"></div>
+				<form id="ajax-submit-form" class="modal-form " action="" method="post">
 					<div class="row">
 						<div class="form-group col-md-6">
 							<label for="exampleInputEmail1">Nominee's Name:</label>
@@ -985,7 +986,18 @@ var jsShowRejectForApprover = 1;
 
 
 
+<script >
+	$(function() {
+	    // Get the form.
+	    var form = $('#ajax-submit-form');
 
+	    // Get the messages div.
+	    var formMessages = $('#form-messages');
+
+	    // TODO: The rest of the code will go here...
+	});
+
+</script>
 
 
 </body>
