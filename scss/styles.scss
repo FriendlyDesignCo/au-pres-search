@@ -491,13 +491,39 @@ form{
 /*//////////////////////////////////////////INTERIOR PAGES*/
 .page-interior{
 	#hero{
-		height: 50vh;
+		height: 25vh;
 	}
 	h2{
 		text-align: center;
 	}
 	.photo{
 		margin: 0 0 30px 30px;
+	}
+	h1 a{
+		// position: absolute;
+		// top: 50%;
+		// transform: translate(0, -50%);
+		color: #fff !important;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		&:hover{
+			opacity: 0.8;
+			text-decoration: none;
+
+		}
+	}
+	h1{
+		position: relative;
+		line-height: 1;
+		float: left;
+		margin: 0;
+		padding: 23px 0;
+		// height: 100%;
+		@media screen and (max-width: $screen-lg) {
+			text-align: center;
+			float: none;
+		}
 	}
 }
 .committee{

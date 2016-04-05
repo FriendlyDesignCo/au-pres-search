@@ -385,11 +385,29 @@ form {
 
 /*//////////////////////////////////////////INTERIOR PAGES*/
 .page-interior #hero {
-  height: 50vh; }
+  height: 25vh; }
 .page-interior h2 {
   text-align: center; }
 .page-interior .photo {
   margin: 0 0 30px 30px; }
+.page-interior h1 a {
+  color: #fff !important;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
+  .page-interior h1 a:hover {
+    opacity: 0.8;
+    text-decoration: none; }
+.page-interior h1 {
+  position: relative;
+  line-height: 1;
+  float: left;
+  margin: 0;
+  padding: 23px 0; }
+  @media screen and (max-width: 992px) {
+    .page-interior h1 {
+      text-align: center;
+      float: none; } }
 
 .committee ul, .committee li {
   padding-left: 0;
