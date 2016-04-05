@@ -73,7 +73,7 @@ var jsShowRejectForApprover = 1;
 </script><script type="text/javascript" src="/commonspot/javascript/browser-all.js"></script>	
 </head>
 <body>
-	<div id="page-custom-analytics">
+	<!-- <div id="page-custom-analytics">
 	</div>
 	<div id="site-wrapper" class="template-AU schoolLanding-TRUE" data-au-info="Server: WWWPROD902">
 		<header id="header-main" class="container-fluid" data-spy="affix" data-offset-top="40">
@@ -84,7 +84,7 @@ var jsShowRejectForApprover = 1;
 					</a>
 				</div>
 				<div class="navbar-full col-xs-6 no-bs-padding">
-					<!--<ul id="global-CTA" class="hidden-xs hidden-sm">
+					<ul id="global-CTA" class="hidden-xs hidden-sm">
 						<li id="global-CTA-apply"><a tabindex="3" href="/admissions/apply/index.cfm" class="btn btn-cta">Apply</a></li>
 						<li id="global-CTA-request">
 							<a tabindex="3" href="javascript:void(0);" class="btn btn-cta" role="button" data-toggle="popover" data-trigger="focus" data-content="
@@ -96,7 +96,7 @@ var jsShowRejectForApprover = 1;
 							" data-html="true" title="Are you interested in...">Request Info</a>
 						</li>
 						<li id="global-CTA-visit"><a tabindex="3" href="/admissions/toursinfosessions.cfm" class="btn btn-cta">Visit</a></li>
-					</ul>-->
+					</ul>
 					<button tabindex="4" class="navbar-toggle visible-md visible-lg" type="button" aria-expanded="false" aria-controls="new-nav" type="button" data-target="#new-nav" data-toggle="collapse" data-placement="right">
 						<span class="sr-only"><span>Show</span></span><span class="visible-lg"> Menu</span>
 						<span class="ion-android-menu"></span>
@@ -296,7 +296,7 @@ var jsShowRejectForApprover = 1;
 					</div>
 				</div>
 			</div>
-		</header>
+		</header> -->
 
 
 
@@ -504,6 +504,7 @@ var jsShowRejectForApprover = 1;
 @import url('css/styles.css');
 </style>
 
+<main id="main-container">
 <div class="page-home home">
 	<section id="hero" class="bg-grey">
 	<h1>Presidential Search</h1>
@@ -565,7 +566,7 @@ var jsShowRejectForApprover = 1;
 				<!-- <a href="#">All News &#62;</a> -->
 			</div>
 			<div class="input">
-				<p>We need your input at this point in process.</p>
+				<p>Provide your comments and ideas regarding AU's next president.</p>
 				<a href="#" class="btn btn-cta" data-toggle="modal" data-target="#submitModal">Submit Feedback</a>
 				<a href="#" class="btn btn-cta" data-toggle="modal" data-target="#nominateModal">Nominate a Committee Member</a>
 			</div>
@@ -667,7 +668,7 @@ var jsShowRejectForApprover = 1;
 				</div>
 				<div class="month">
 					<h4>April 2016</h4>
-					<p>Nominations for open slots (one faculty; one student) on search committee due April 8</p>
+					<p>Nominations for open slots (one faculty; one student) on search committee due April 11</p>
 					<p>Listening sessions with campus constituencies to solicit feedback about:</p>
 					<ul>
 						<li>Characteristics of the next president</li>
@@ -757,8 +758,12 @@ var jsShowRejectForApprover = 1;
 				<h4 class="modal-title" id="myModalLabel">Nominate a Student or Faculty Member</h4>
 			</div>
 			<div class="modal-body">
-				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Friday, April 8.</strong></p>
+
+				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Monday, April 11.</strong></p>
 				<form class="">
+
+				<div id="form-messages"></div>
+				<form id="ajax-submit-form" class="modal-form " action="" method="post">
 					<div class="row">
 						<div class="form-group col-md-6">
 							<label for="exampleInputEmail1">Nominee's Name:</label>
@@ -852,7 +857,7 @@ var jsShowRejectForApprover = 1;
 				</form>
 			</div>
 			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-primary">Submit</button>
+				<input class="btn btn-primary" type="submit" value="Submit">
 			</div>
 		</div>
 	</div>
@@ -869,7 +874,7 @@ var jsShowRejectForApprover = 1;
 			<div class="modal-body">
 				<p>Thank you for your comments and suggestions regarding the AU Presidential Search.</p>
 
-				<form>
+				<form class="" action="" method="post">
 					<div class="row">
 						<div class="form-group col-md-6">
 							<label for="exampleInputEmail1">Nominee's Name:</label>
@@ -930,15 +935,14 @@ var jsShowRejectForApprover = 1;
 				</form>
 			</div>
 			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-primary">Submit</button>
+				<input class="btn btn-primary" type="submit" value="Submit">
 			</div>
 		</div>
 	</div>
 </div>
 <!-- End Modal -->
 </div>
-
-
+</main>
 <!-- CUSTOM CODE ENDS HERE -->
 <!-- CUSTOM CODE ENDS HERE -->
 <!-- CUSTOM CODE ENDS HERE -->
@@ -951,7 +955,7 @@ var jsShowRejectForApprover = 1;
 <!-- FOOTER -->
 <!-- FOOTER -->
 
-<footer class="container-fluid" id="site-footer">
+<!-- <footer class="container-fluid" id="site-footer">
 	<div class="row row-center" id="ftr-flex-context">
 		<div class="col-md-4 col-sm-12 col-xs-12 no-bs-padding" id="ftr-address-policies">
 			<address>4400 Massachusetts Avenue, NW<br>Washington, DC 20016</address>
@@ -984,12 +988,60 @@ var jsShowRejectForApprover = 1;
 			<a href="/"><img src="http://www.american.edu/customcf/responsive-site/images/logos/crest-logotype-blue.svg" alt="American University in Washington, DC"><span class="sr-only"> Homepage</span></a>
 		</div>
 	</div>
-</footer>
+</footer> -->
 
 
 
 
+<script >
+	$(function() {
+	    // Get the form.
+	    var form = $('#ajax-submit-form');
 
+	    // Get the messages div.
+	    var formMessages = $('#form-messages');
+
+	    // TODO: The rest of the code will go here...
+	    $(form).submit(function(event) {
+		    // Stop the browser from submitting the form.
+		    event.preventDefault();
+
+		    // Serialize the form data.
+			var formData = $(form).serialize();
+
+			$.ajax({
+			    type: 'POST',
+			    url: $(form).attr('action'),
+			    data: formData
+			}).done(function(response) {
+			    // Make sure that the formMessages div has the 'success' class.
+			    $(formMessages).removeClass('error');
+			    $(formMessages).addClass('success');
+
+			    // Set the message text.
+			    $(formMessages).text(response);
+
+			    // Clear the form.
+			    $('#name').val('');
+			    $('#email').val('');
+			    $('#message').val('');
+			}).fail(function(data) {
+			    // Make sure that the formMessages div has the 'error' class.
+			    $(formMessages).removeClass('success');
+			    $(formMessages).addClass('error');
+
+			    // Set the message text.
+			    if (data.responseText !== '') {
+			        $(formMessages).text(data.responseText);
+			    } else {
+			        $(formMessages).text('Oops! An error occured and your message could not be sent.');
+			    }
+			});
+		});
+	});
+
+
+</script>
 
 
 </body>
