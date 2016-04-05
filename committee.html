@@ -456,11 +456,13 @@
 			    data: formData
 			}).done(function(response) {
 			    // Make sure that the formMessages div has the 'success' class.
-			    $(formMessages).removeClass('error');
-			    $(formMessages).addClass('success');
+			    //$(formMessages).removeClass('error');
+			    //$(formMessages).addClass('success');
 
 			    // Set the message text.
-			    $(formMessages).text(response);
+			    //$(formMessages).text(response);
+
+			    $(".modal").modal("hide");
 
 			    // Clear the form.
 			    //$('#name').val('');
@@ -483,6 +485,7 @@
 		/*$( "form" ).on( "submit", function( event ) {
 		  event.preventDefault();
 		  console.log( $( this ).serialize() );
+		 $(".modal").modal("hide");
 		});*/
 	});
 
