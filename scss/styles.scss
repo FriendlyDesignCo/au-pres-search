@@ -2,6 +2,11 @@ $screen-lg: 992px;
 $screen-md: 500px;
 $screen-sm: 300px;
 
+
+strong{
+	font-family: Interstate, Arial, sans-serif;
+}
+
 /*//////////////////////////////////////////HERO*/
 #hero{
 	position: relative;
@@ -411,10 +416,10 @@ $screen-sm: 300px;
 		}
 		.btn{
 			position: absolute;
-			top: 60%;
+			top: 70%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			bottom: 100px;
+			// bottom: 100px;
 			max-width: 400px;
 			@media screen and (max-width: $screen-lg) {
 				position: relative;
@@ -474,15 +479,35 @@ $screen-sm: 300px;
 }
 
 
-
-
-
-
-
-
-
-
+/*//////////////////////////////////////////MODAL WINDOWS*/
 
 form{
 	font-family: Interstate,Arial,sans-serif;
 }
+
+
+
+
+/*//////////////////////////////////////////INTERIOR PAGES*/
+.page-interior{
+	#hero{
+		height: 50vh;
+	}
+	h2{
+		text-align: center;
+	}
+	.photo{
+		margin: 0 0 30px 30px;
+	}
+}
+.committee{
+	ul, li{
+		padding-left: 0;
+		margin-left: 0;
+		list-style: none;
+	}
+	li{
+		padding-bottom: 10px;
+	}
+}
+
