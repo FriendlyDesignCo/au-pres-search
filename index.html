@@ -746,7 +746,84 @@ var jsShowRejectForApprover = 1;
 		</div>
 	</div>
 </section>
+<!-- Submit Modal -->
+<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Submit Feedback</h4>
+			</div>
+			<div class="modal-body">
+				<p>Thank you for your comments and suggestions regarding the AU Presidential Search.</p>
 
+				<form class="commitee-form" action="" method="post">
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="nominee-name">Nominee's Name:</label>
+							<input type="text" class="form-control" id="nominee-name" placeholder="Full Name">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="nominee-email">Nominee's Email:</label>
+							<input type="email" class="form-control" id="nominee-email" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Affiliation (select all applicable fields):</label>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation" value="Undergraduate Student"> Undergraduate Student
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Graduate Student"> Graduate Student
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Faculty"> Faculty
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Staff"> Staff
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Alumni"> Alumni
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Neighbor"> Neighbor
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Friend"> Friend
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="affiliation"  value="Other"> Other
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="comment-box">Comments:</label>
+						<textarea id="comment-box" class="form-control" rows="3" placeholder="What's up?" required></textarea>
+					</div>	
+					<div class="modal-footer text-center">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Modal -->
 
 <!-- Nominate Modal -->
 <div class="modal fade" id="nominateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -759,38 +836,31 @@ var jsShowRejectForApprover = 1;
 			<div class="modal-body">
 
 				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Monday, April 11.</strong></p>
-				<form class="">
+				
 
 				<div id="form-messages"></div>
 				<form id="ajax-submit-form" class="modal-form " action="" method="post">
 					<div class="row">
 						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+							<label for="nominee-name-2">Nominee's Name:</label>
+							<input type="text" class="form-control" id="nominee-name-2" placeholder="Full Name">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Email:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							<label for="nominee-email-2">Nominee's Email:</label>
+							<input type="email" class="form-control" id="nominee-email-2" placeholder="Email">
 						</div>
 					</div>
-
-
-
-
-
-
-
 					<div class="form-group">
 						<label>Affiliation</label>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios1" value="option1" checked>
+								<input type="radio" name="affiliation" id="optionsRadios1" value="Student" checked>
 								Student (Undergraduate, Graduate/PhD/Law)
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios2" value="option2">
+								<input type="radio" name="affiliation" id="optionsRadios2" value="Faculty">
 								Faculty
 							</label>
 						</div>
@@ -800,37 +870,37 @@ var jsShowRejectForApprover = 1;
 						<label>School</label>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios1" value="option1" checked>
+								<input type="radio" name="school" id="optionsRadios1" value="CAS" checked>
 								CAS
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
+								<input type="radio" name="school" id="optionsRadios2" value="KSB">
 								KSB
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
+								<input type="radio" name="school" id="optionsRadios2" value="SOC">
 								SOC
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
+								<input type="radio" name="school" id="optionsRadios2" value="SIS">
 								SIS
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
+								<input type="radio" name="school" id="optionsRadios2" value="SPA">
 								SPA
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="option2">
+								<input type="radio" name="school" id="optionsRadios2" value="SPExS">
 								SPExS
 							</label>
 						</div>
@@ -846,100 +916,24 @@ var jsShowRejectForApprover = 1;
 					<div class="row">	
 						<div class="form-group col-md-6">
 							<label for="exampleInputEmail1">Nominator's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+							<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
 						</div>
 						<div class="form-group col-md-6">
 							<label for="exampleInputEmail1">Nominator's Email:</label>
 							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
 						</div>
 					</div>
+					<div class="modal-footer text-center">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
 				</form>
 			</div>
-			<div class="modal-footer text-center">
-				<input class="btn btn-primary" type="submit" value="Submit">
-			</div>
+			
 		</div>
 	</div>
 </div>
 <!-- End Modal -->
-<!-- Submit Modal -->
-<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Submit Feedback</h4>
-			</div>
-			<div class="modal-body">
-				<p>Thank you for your comments and suggestions regarding the AU Presidential Search.</p>
 
-				<form class="" action="" method="post">
-					<div class="row">
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Name:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
-						</div>
-						<div class="form-group col-md-6">
-							<label for="exampleInputEmail1">Nominee's Email:</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-						</div>
-					</div>
-					<div class="form-group">
-						<label>Affiliation (select all applicable fields):</label>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Undergraduate Student
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Graduate Student
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Faculty
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Staff
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Alumni
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Neighbor
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Friend
-							</label>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Other
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Comments:</label>
-						<textarea class="form-control" rows="3" placeholder="What's up?" required></textarea>
-					</div>	
-				</form>
-			</div>
-			<div class="modal-footer text-center">
-				<input class="btn btn-primary" type="submit" value="Submit">
-			</div>
-		</div>
-	</div>
-</div>
-<!-- End Modal -->
 </div>
 
 
@@ -1022,9 +1016,9 @@ var jsShowRejectForApprover = 1;
 			    $(formMessages).text(response);
 
 			    // Clear the form.
-			    $('#name').val('');
-			    $('#email').val('');
-			    $('#message').val('');
+			    //$('#name').val('');
+			    //$('#email').val('');
+			    //$('#message').val('');
 			}).fail(function(data) {
 			    // Make sure that the formMessages div has the 'error' class.
 			    $(formMessages).removeClass('success');
@@ -1038,6 +1032,11 @@ var jsShowRejectForApprover = 1;
 			    }
 			});
 		});
+
+		/*$( "form" ).on( "submit", function( event ) {
+		  event.preventDefault();
+		  console.log( $( this ).serialize() );
+		});*/
 	});
 
 
