@@ -1,55 +1,65 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.american.edu/customcf/2016-redesign/css/styles.min.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.american.edu/customcf/2016-redesign/css/styles.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    </head>
+</head>
 
 <body>
 	
 
-<!-- CUSTOM CODE STARTS HERE -->
-<!-- CUSTOM CODE STARTS HERE -->
-<!-- CUSTOM CODE STARTS HERE -->
-<!-- CUSTOM CODE STARTS HERE -->
-<!-- CUSTOM CODE STARTS HERE -->
+	<!-- CUSTOM CODE STARTS HERE -->
+	<!-- CUSTOM CODE STARTS HERE -->
+	<!-- CUSTOM CODE STARTS HERE -->
+	<!-- CUSTOM CODE STARTS HERE -->
+	<!-- CUSTOM CODE STARTS HERE -->
 
 
-<style>
-@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-@import url('http://cloud.webtype.com/css/460bbf40-e42e-4546-ad50-505ce77c3587.css');
-@import url('css/styles.css');
-</style>
+	<style>
+	@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+	@import url('http://cloud.webtype.com/css/460bbf40-e42e-4546-ad50-505ce77c3587.css');
+	@import url('css/styles.css');
+	</style>
 
-<main id="main-container">
-<div class="page-home home">
-	<section id="hero" class="bg-grey">
-	<h1>Presidential Search</h1>
-</section>
-<section id="nav">
-	<nav class="bg-warm-blue light">
-		<div class="container">
+	<main id="main-container">
+		<div class="page-home home">
+
+
+
+			<main id="main-container">
+				<section id="section-hero" class="container-fluid">
+					<section id="hero" class="bg-grey">
+						<h1>Presidential Search</h1>
+					</section>
+				</section>
+
+
+
+				<section id="section-content" class="container-fluid">
+					<section id="nav">
+						<nav class="bg-warm-blue light">
+							<div class="container">
 			<!-- <h1>
 				<a href="index.html">Presidential Search</a>
 			</h1> -->
 			<ul>
-			<li>
-				<a href="committee.html">Committee</a>
-			</li>
-			<li>
-				<a href="outreach.html">Outreach</a>
-			</li>
-			<li>
-				<a href="search.html">Search Firm</a>
-			</li>
-		</ul>
-	</div>
+				<li>
+					<a href="committee.html">Committee</a>
+				</li>
+				<li>
+					<a href="outreach.html">Outreach</a>
+				</li>
+				<li>
+					<a href="search.html">Search Firm</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 </section>
 <section id="welcome" class="container">
@@ -503,6 +513,7 @@
 <!-- End Modal -->
 
 </div>
+</section>
 </main>
 <!-- CUSTOM CODE ENDS HERE -->
 <!-- CUSTOM CODE ENDS HERE -->
@@ -515,7 +526,7 @@
 
 
 <script>
-	$(function() {
+$(function() {
 	    // Get the form.
 	    var form = $('#ajax-submit-form');
 
@@ -528,13 +539,13 @@
 		    event.preventDefault();
 
 		    // Serialize the form data.
-			var formData = $(form).serialize();
+		    var formData = $(form).serialize();
 
-			$.ajax({
-			    type: 'POST',
-			    url: $(form).attr('action'),
-			    data: formData
-			}).done(function(response) {
+		    $.ajax({
+		    	type: 'POST',
+		    	url: $(form).attr('action'),
+		    	data: formData
+		    }).done(function(response) {
 			    // Make sure that the formMessages div has the 'success' class.
 			    //$(formMessages).removeClass('error');
 			    //$(formMessages).addClass('success');
@@ -545,7 +556,7 @@
 			    //$(".modal").modal("hide");
 
 			    $(this).find('#form-messages').text("Thanks for your submission!");
-				
+
 			    // Clear the form.
 			    //$('#name').val('');
 			    //$('#email').val('');
@@ -557,9 +568,9 @@
 
 			    // Set the message text.
 			    if (data.responseText !== '') {
-			        $(this).find('#form-messages').text(data.responseText);
+			    	$(this).find('#form-messages').text(data.responseText);
 			    } else {
-			        $(this).find('#form-messages').text('Oops! An error occured and your message could not be sent.');
+			    	$(this).find('#form-messages').text('Oops! An error occured and your message could not be sent.');
 			    }
 			});
 		});
@@ -569,9 +580,11 @@
 		  console.log( $( this ).serialize() );
 		 $(this).find('#form-messages').text("Thanks for your submission!");
 		});*/
-	});
+});
 
 </script>
+
+
 </body>
 
 </html>
