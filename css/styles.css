@@ -417,10 +417,13 @@ form {
 .page-interior .photo {
   margin: 0 0 30px 30px; }
 .page-interior h1 a {
+  display: block;
   color: #fff !important;
   font-size: 1.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 23px 0 0 0; }
   .page-interior h1 a:hover, .page-interior h1 a:focus, .page-interior h1 a:active {
     opacity: 0.8;
     text-decoration: none; }
@@ -429,7 +432,7 @@ form {
   line-height: 1;
   float: left;
   margin: 0;
-  padding: 23px 0; }
+  padding: 0; }
   @media screen and (max-width: 992px) {
     .page-interior h1 {
       text-align: center;
@@ -447,5 +450,29 @@ form {
   line-height: 1.4; }
 .outreach .schedule p {
   margin-top: 7px; }
+
+.contactarea {
+  width: 50%;
+  margin: 0 0 10px 15px;
+  float: right; }
+  @media screen and (max-width: 992px) {
+    .contactarea {
+      float: none;
+      width: 100%;
+      margin: 0 0 20px;
+      text-align: center; } }
+  .contactarea div {
+    background-color: rgba(0, 80, 120, 0.2);
+    padding: 20px; }
+  .contactarea h4 {
+    margin-top: 0;
+    padding-top: 0; }
+  .contactarea p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 110%; }
+  .contactarea div + p {
+    font-size: 14px;
+    padding: 0 20px; }
 
 /*# sourceMappingURL=styles.css.map */
