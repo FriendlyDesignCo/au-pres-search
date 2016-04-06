@@ -2,10 +2,20 @@ $screen-lg: 992px;
 $screen-md: 500px;
 $screen-sm: 300px;
 
+*{
+	box-sizing: border-box;
+}
 
 strong{
 	font-family: Interstate, Arial, sans-serif;
 }
+
+.container{
+	@media screen and (max-width: $screen-lg) {
+		width: 100%;
+	}
+}
+
 
 /*//////////////////////////////////////////HERO*/
 #hero{
@@ -141,7 +151,7 @@ strong{
 
 /*//////////////////////////////////////////ABOUT*/
 #about{
-
+	
 }
 #about h2{
 	text-align: center;
@@ -365,7 +375,10 @@ strong{
 
 /*//////////////////////////////////////////TIMELINE*/
 #timeline{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAFUlEQVQImWNgwAKOnzjxf+AEGRgYANwVFAVJ136OAAAAAElFTkSuQmCC) #ebebec;
 	padding:50px;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 	@media screen and (max-width: $screen-lg) {
 		padding: 0;
 	}
@@ -396,6 +409,7 @@ strong{
 }
 /*//////////////////////////////////////////ACTION*/
 #action{
+
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/footer-cta.jpg');
 	background-size: cover;
 	background-color: #ccc;

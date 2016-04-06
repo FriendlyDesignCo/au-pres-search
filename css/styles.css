@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box; }
+
 strong {
   font-family: Interstate, Arial, sans-serif; }
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%; } }
 
 /*//////////////////////////////////////////HERO*/
 #hero {
@@ -290,7 +297,10 @@ strong {
 
 /*//////////////////////////////////////////TIMELINE*/
 #timeline {
-  padding: 50px; }
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAFUlEQVQImWNgwAKOnzjxf+AEGRgYANwVFAVJ136OAAAAAElFTkSuQmCC) #ebebec;
+  padding: 50px;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
   @media screen and (max-width: 992px) {
     #timeline {
       padding: 0; } }
