@@ -14,6 +14,7 @@ strong {
   height: 75vh;
   background-image: url("../img/search-hero.jpg");
   background-size: cover;
+  background-position: center center;
   /*background-color: #333;*/ }
   @media screen and (max-width: 992px) {
     #hero {
@@ -21,7 +22,7 @@ strong {
 
 #hero:after {
   content: " ";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   display: block;
   height: 100%;
   width: 100%; }
@@ -38,7 +39,8 @@ strong {
   transform: translate(-50%, -50%);
   font-size: 70px;
   text-transform: uppercase;
-  line-height: 1; }
+  line-height: 1;
+  text-shadow: 0 0 10px #000; }
   @media screen and (max-width: 992px) {
     #hero h1 {
       font-size: 40px; } }
@@ -318,6 +320,8 @@ strong {
   #timeline p, #timeline li {
     font-size: 14px;
     line-height: 1.4; }
+  #timeline p {
+    margin-top: 7px; }
   #timeline ul {
     margin-left: 20px;
     padding-left: 0; }
@@ -329,6 +333,7 @@ strong {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../img/footer-cta.jpg");
   background-size: cover;
   background-color: #ccc;
+  background-position: center bottom;
   padding: 5% 0;
   text-align: center; }
   @media screen and (max-width: 992px) {
@@ -395,6 +400,13 @@ form {
   font-family: Interstate,Arial,sans-serif; }
 
 /*//////////////////////////////////////////INTERIOR PAGES*/
+.page-interior.committee #hero {
+  background-image: url("../img/bg-committee.jpg"); }
+.page-interior.search #hero {
+  background-image: url("../img/bg-search-firm.jpg"); }
+.page-interior.outreach #hero {
+  background-image: url("../img/bg-outreach.jpg");
+  background-position: center 31%; }
 .page-interior #hero {
   height: 25vh;
   background-color: none; }
@@ -429,5 +441,11 @@ form {
   list-style: none; }
 .committee li {
   padding-bottom: 10px; }
+
+.outreach .schedule p, .outreach .schedule li {
+  font-size: 14px;
+  line-height: 1.4; }
+.outreach .schedule p {
+  margin-top: 7px; }
 
 /*# sourceMappingURL=styles.css.map */
