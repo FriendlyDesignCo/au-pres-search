@@ -201,10 +201,16 @@
 
 					<div class="row">
 						<div class="form-group col-md-6">
-							<label for="nominee-name">Nominee's Name:</label>
-							<input type="text" class="form-control" id="nominee-name" name="fullname" placeholder="Full Name">
+							<label for="nominee-name">Nominee's First Name:</label>
+							<input type="text" class="form-control" id="nominee-name" name="nominee-first" placeholder="First Name">
 						</div>
 						<div class="form-group col-md-6">
+							<label for="nominee-name">Nominee's Last Name:</label>
+							<input type="text" class="form-control" id="nominee-name" name="nominee-last" placeholder="Last Name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
 							<label for="nominee-email">Nominee's Email:</label>
 							<input type="email" class="form-control" id="nominee-email" name="email" placeholder="Email">
 						</div>
@@ -267,42 +273,66 @@
 </div>
 <!-- End Modal -->
 
-<!-- Nominate Modal -->
+<!-- NOMINATE A STUDENT OR FACULTY MEMBER Modal -->
 <div class="modal fade" id="nominateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Nominate a Student or Faculty Member</h4>
+				<h4 class="modal-title" id="myModalLabel">Interested in Serving</h4>
 			</div>
 			<div class="modal-body">
 
 				<p>One student and one faculty member will be selected to fill remaining openings on the Search Committee. <strong>Nominations are due Monday, April 11.</strong></p>
 				
 
-				<div id="form-messages"></div>
+				
 				<form id="ajax-submit-form" class="modal-form " action="" method="post">
 					<div class="row">
 						<div class="form-group col-md-6">
-							<label for="nominee-name-2">Nominee's Name:</label>
-							<input type="text" class="form-control" name="fullname" id="nominee-name-2" placeholder="Full Name">
+							<label for="nominee-name-2">First Name:</label>
+							<input type="text" class="form-control" name="fullname" id="nominee-first-name-2" placeholder="First Name">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="nominee-email-2">Nominee's Email:</label>
-							<input type="email" class="form-control" name="email" id="nominee-email-2" placeholder="Email">
+							<label for="nominee-last-name-2">Last Name:</label>
+							<input type="text" class="form-control" name="lastname" id="nominee-last-name-2" placeholder="Last Name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="email-2">Email:</label>
+							<input type="email" class="form-control" name="email" id="email-2" placeholder="Email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="email-2">Cell:</label>
+							<input type="text" class="form-control" name="cell" id="cell-2" placeholder="(202)885-1234">
 						</div>
 					</div>
 					<div class="form-group">
 						<label>Affiliation</label>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios1" value="Student" checked>
-								Student (Undergraduate, Graduate/PhD/Law)
+								<input type="radio" name="affiliation" id="optionsRadios1" value="Student-Undergrad" checked>
+								Student (Undergraduate)
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios2" value="Faculty">
+								<input type="radio" name="affiliation" id="optionsRadios2" value="Student-Grad-PhD">
+								Student (Graduate/PhD)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios3" value="Student-Law">
+								Student (Law)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios4" value="Faculty">
 								Faculty
 							</label>
 						</div>
@@ -324,26 +354,32 @@
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SOC">
+								<input type="radio" name="school" id="optionsRadios3" value="SOC">
 								SOC
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SIS">
+								<input type="radio" name="school" id="optionsRadios4" value="SIS">
 								SIS
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SPA">
+								<input type="radio" name="school" id="optionsRadios5" value="SPA">
 								SPA
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SPExS">
+								<input type="radio" name="school" id="optionsRadios6" value="SPExS">
 								SPExS
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios7" value="WCL">
+								WCL
 							</label>
 						</div>
 					</div>
@@ -352,7 +388,7 @@
 						<textarea class="form-control" id="qualifications" rows="3" name="qualifications" placeholder="What's up?" required></textarea>
 					</div>
 					<div class="form-group">
-						<label for="nominee-details">What would the nominee bring to the committee:</label>
+						<label for="nominee-details">What would you bring to the committee:</label>
 						<textarea class="form-control" id="nominee-details" rows="3" name="nominee-details" placeholder="What's up?" required></textarea>
 					</div>
 					<div class="row">	
@@ -377,9 +413,9 @@
 	
 </div>
 <!-- End Modal -->
+
 </div>
-
-
+</main>
 <!-- CUSTOM CODE ENDS HERE -->
 <!-- CUSTOM CODE ENDS HERE -->
 <!-- CUSTOM CODE ENDS HERE -->
@@ -390,9 +426,7 @@
 
 
 
-
-
-<script >
+<script>
 	$(function() {
 	    // Get the form.
 	    var form = $('#ajax-submit-form');
@@ -450,7 +484,6 @@
 	});
 
 </script>
-
 </body>
 
 </html>
