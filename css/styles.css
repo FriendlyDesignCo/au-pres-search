@@ -8,6 +8,10 @@ strong {
   .container {
     width: 100%; } }
 
+section {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 /*//////////////////////////////////////////HERO*/
 #hero {
   position: relative;
@@ -246,22 +250,45 @@ strong {
   @media screen and (max-width: 992px) {
     #moreinfo h4 {
       text-align: center;
-      margin: 0; } }
+      margin: 0;
+      position: relative;
+      top: inherit;
+      left: inherit;
+      transform: none;
+      padding: 30px 0; } }
 #moreinfo ul {
   padding: 0;
   margin: 0;
   width: 100%;
   display: table; }
+  @media screen and (max-width: 992px) {
+    #moreinfo ul {
+      background-color: rgba(208, 196, 182, 0.6); } }
 #moreinfo li:nth-of-type(5n+1) {
   background-color: rgba(208, 196, 182, 0.6); }
+  @media screen and (max-width: 992px) {
+    #moreinfo li:nth-of-type(5n+1) {
+      background-color: rgba(208, 196, 182, 0); } }
 #moreinfo li:nth-of-type(5n+2) {
   background-color: rgba(208, 196, 182, 0.7); }
+  @media screen and (max-width: 992px) {
+    #moreinfo li:nth-of-type(5n+2) {
+      background-color: rgba(208, 196, 182, 0); } }
 #moreinfo li:nth-of-type(5n+3) {
   background-color: rgba(208, 196, 182, 0.8); }
+  @media screen and (max-width: 992px) {
+    #moreinfo li:nth-of-type(5n+3) {
+      background-color: rgba(208, 196, 182, 0); } }
 #moreinfo li:nth-of-type(5n+4) {
   background-color: rgba(208, 196, 182, 0.9); }
+  @media screen and (max-width: 992px) {
+    #moreinfo li:nth-of-type(5n+4) {
+      background-color: rgba(208, 196, 182, 0); } }
 #moreinfo li:nth-of-type(5n+5) {
   background-color: #d0c4b6; }
+  @media screen and (max-width: 992px) {
+    #moreinfo li:nth-of-type(5n+5) {
+      background-color: rgba(208, 196, 182, 0); } }
 #moreinfo li {
   position: relative;
   display: inline-block;
@@ -281,28 +308,37 @@ strong {
       width: 100%;
       height: auto;
       float: none;
-      padding: 30px 0; } }
+      border-top: 1px solid rgba(255, 255, 255, 0.5); } }
   #moreinfo li:hover {
     opacity: 0.8; }
     #moreinfo li:hover:first-child {
-      opacity: 1; }
+      opacity: 1;
+      border: none !important; }
 #moreinfo li a {
   display: block;
   height: 100%;
+  width: 100%;
   position: relative; }
+  #moreinfo li a:hover {
+    text-decoration: none; }
 #moreinfo li a div {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700 !important; }
+  @media screen and (max-width: 992px) {
+    #moreinfo li a div {
+      top: inherit;
+      left: inherit;
+      position: relative;
+      transform: none;
+      padding: 30px 0; } }
 
 /*//////////////////////////////////////////TIMELINE*/
 #timeline {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAFUlEQVQImWNgwAKOnzjxf+AEGRgYANwVFAVJ136OAAAAAElFTkSuQmCC) #ebebec;
-  padding: 50px;
-  margin-left: 0 !important;
-  margin-right: 0 !important; }
+  padding: 50px; }
   @media screen and (max-width: 992px) {
     #timeline {
       padding: 0; } }
