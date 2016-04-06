@@ -413,7 +413,8 @@ form {
   .page-interior #hero:after {
     background-color: transparent; }
 .page-interior h2 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
 .page-interior .photo {
   margin: 0 0 30px 30px; }
 .page-interior h1 a {
@@ -427,6 +428,9 @@ form {
   .page-interior h1 a:hover, .page-interior h1 a:focus, .page-interior h1 a:active {
     opacity: 0.8;
     text-decoration: none; }
+  @media screen and (max-width: 992px) {
+    .page-interior h1 a {
+      padding-bottom: 23px; } }
 .page-interior h1 {
   position: relative;
   line-height: 1;
@@ -453,7 +457,7 @@ form {
 
 .contactarea {
   width: 50%;
-  margin: 0 0 10px 15px;
+  margin: 0 0px 10px 15px;
   float: right; }
   @media screen and (max-width: 992px) {
     .contactarea {
@@ -463,7 +467,11 @@ form {
       text-align: center; } }
   .contactarea div {
     background-color: rgba(0, 80, 120, 0.2);
+    margin: 0 0 5px 20px;
     padding: 20px; }
+    @media screen and (max-width: 992px) {
+      .contactarea div {
+        margin-left: 0; } }
   .contactarea h4 {
     margin-top: 0;
     padding-top: 0; }
@@ -473,7 +481,11 @@ form {
     font-size: 110%; }
   .contactarea div + p {
     font-size: 14px;
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin: 0 0 20px 20px; }
+    @media screen and (max-width: 992px) {
+      .contactarea div + p {
+        margin-left: 0; } }
 
 .search h3 {
   margin-top: 50px; }
