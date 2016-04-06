@@ -312,8 +312,7 @@ section {
   #moreinfo li:hover {
     opacity: 0.8; }
     #moreinfo li:hover:first-child {
-      opacity: 1;
-      border: none !important; }
+      opacity: 1; }
 #moreinfo li a {
   display: block;
   height: 100%;
