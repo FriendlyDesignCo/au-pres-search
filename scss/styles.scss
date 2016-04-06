@@ -23,6 +23,7 @@ strong{
 	height: 75vh;
 	background-image: url('../img/search-hero.jpg');
 	background-size: cover;
+	background-position: center center;
 	/*background-color: #333;*/
 	@media screen and (max-width: $screen-lg) {
 		height: 50vh;
@@ -30,7 +31,7 @@ strong{
 }
 #hero:after{
 	content: " ";
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.25);
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -48,6 +49,7 @@ strong{
 	font-size: 70px;
 	text-transform: uppercase;
 	line-height: 1;
+	text-shadow: 0 0 10px #000;
 	@media screen and (max-width: $screen-lg) {
 		font-size: 40px;
 	}
@@ -399,6 +401,9 @@ strong{
 		font-size: 14px;
 		line-height: 1.4;
 	}
+	p{
+		margin-top: 7px;
+	}
 	ul{
 		margin-left: 20px;
 		padding-left: 0;
@@ -413,6 +418,7 @@ strong{
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/footer-cta.jpg');
 	background-size: cover;
 	background-color: #ccc;
+	background-position: center bottom;
 	padding: 5% 0;
 	text-align: center;
 	.row .col-md-6{
@@ -505,14 +511,15 @@ form{
 
 /*//////////////////////////////////////////INTERIOR PAGES*/
 .page-interior{
-	.committee #hero{
-		// background-image: 
+	&.committee #hero{
+		background-image: url('../img/bg-committee.jpg');
 	}
-	.search #hero{
-		// background-image: 
+	&.search #hero{
+		background-image: url('../img/bg-search-firm.jpg');
 	}
-	.outreach #hero{
-		// background-image: 
+	&.outreach #hero{
+		background-image: url('../img/bg-outreach.jpg');
+		background-position: center 31%;
 	}
 
 	#hero{
@@ -529,13 +536,17 @@ form{
 		margin: 0 0 30px 30px;
 	}
 	h1 a{
+		display: block;
 		// position: absolute;
+		// width: 100%;
 		// top: 50%;
 		// transform: translate(0, -50%);
 		color: #fff !important;
 		font-size: 1.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
+		margin: 0;
+		padding: 23px 0 0 0;
 		&:hover, &:focus, &:active{
 			opacity: 0.8;
 			text-decoration: none;
@@ -547,7 +558,7 @@ form{
 		line-height: 1;
 		float: left;
 		margin: 0;
-		padding: 23px 0;
+		padding: 0;
 		// height: 100%;
 		@media screen and (max-width: $screen-lg) {
 			text-align: center;
@@ -565,4 +576,44 @@ form{
 		padding-bottom: 10px;
 	}
 }
+.outreach{
+	.schedule{
+		p, li{
+		font-size: 14px;
+		line-height: 1.4;
+		}
+		p{
+			margin-top: 7px;
+		}
+	}
+}
 
+.contactarea{
+	width: 50%;
+	margin: 0 0 10px 15px;
+	float: right;
+
+	@media screen and (max-width: $screen-lg) {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	div{
+		background-color:rgba(0, 80, 120, 0.2);
+		padding: 20px;
+	}
+	h4{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	p{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		font-size: 110%;
+	}
+	div + p{
+		font-size: 14px;
+		padding: 0 20px;
+	}
+}
