@@ -402,13 +402,25 @@
 						<label>Affiliation</label>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios1" value="Student" checked>
-								Student (Undergraduate, Graduate/PhD/Law)
+								<input type="radio" name="affiliation" id="optionsRadios1" value="Student-Undergrad" checked>
+								Student (Undergraduate)
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="affiliation" id="optionsRadios2" value="Faculty">
+								<input type="radio" name="affiliation" id="optionsRadios2" value="Student-Grad-PhD">
+								Student (Graduate/PhD)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios3" value="Student-Law">
+								Student (Law)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="affiliation" id="optionsRadios4" value="Faculty">
 								Faculty
 							</label>
 						</div>
@@ -430,26 +442,32 @@
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SOC">
+								<input type="radio" name="school" id="optionsRadios3" value="SOC">
 								SOC
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SIS">
+								<input type="radio" name="school" id="optionsRadios4" value="SIS">
 								SIS
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SPA">
+								<input type="radio" name="school" id="optionsRadios5" value="SPA">
 								SPA
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="school" id="optionsRadios2" value="SPExS">
+								<input type="radio" name="school" id="optionsRadios6" value="SPExS">
 								SPExS
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="school" id="optionsRadios7" value="WCL">
+								WCL
 							</label>
 						</div>
 					</div>
@@ -458,7 +476,7 @@
 						<textarea class="form-control" id="qualifications" rows="3" name="qualifications" placeholder="What's up?" required></textarea>
 					</div>
 					<div class="form-group">
-						<label for="nominee-details">What would the nominee bring to the committee:</label>
+						<label for="nominee-details">What would you bring to the committee:</label>
 						<textarea class="form-control" id="nominee-details" rows="3" name="nominee-details" placeholder="What's up?" required></textarea>
 					</div>
 					<div class="row">	
